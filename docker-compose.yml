@@ -1,0 +1,14 @@
+services:
+  pudding:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      sh -c "sleep infinity"
+    tty: true
+    volumes:
+      - node_modules:/home/node/app/node_modules
+      - .:/home/node/app
+
+volumes:
+  node_modules:
