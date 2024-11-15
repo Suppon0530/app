@@ -1,0 +1,23 @@
+{
+    "name": "Suppon Game",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "pudding",
+    "workspaceFolder": "/home/node/app",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "formulahendry.auto-close-tag", // HTML Auto Close Tag
+          "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
+          "dbaeumer.vscode-eslint", // ESLint
+          "esbenp.prettier-vscode", // prettier
+          "PKief.material-icon-theme", // iconパック
+          "xabikos.ReactSnippets", // React Code Snippets
+          "xabikos.JavaScriptSnippets", // JS Code Snippets
+          "chouzz.vscode-better-align", // better align
+          "aaron-bond.better-comments" // better comments
+        ]
+      }
+    },
+    "remoteUser": "node"
+  }
+  
