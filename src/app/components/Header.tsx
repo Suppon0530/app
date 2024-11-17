@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import { useState } from 'react';
+import nextConfig from '../../../next.config';
+const BASE_PATH = nextConfig.basePath || '';
 
 // ヘッダーコンポーネント
 export default function Header() {
@@ -16,7 +18,13 @@ export default function Header() {
   return (
     <header className='fixed z-10 grid w-full grid-cols-header bg-white shadow-md'>
       <div className='content-center px-4 py-2'>
-        <Image src='/suppon-icon.png' alt='Vercel logomark' width={64} height={64} priority />
+        <Image
+          src={`${BASE_PATH}/suppon-icon.png`}
+          alt='Vercel logomark'
+          width={64}
+          height={64}
+          priority
+        />
       </div>
       <div className='content-center justify-items-center px-8'>
         <Link href='/' className='text-[2rem] font-bold text-main'>
