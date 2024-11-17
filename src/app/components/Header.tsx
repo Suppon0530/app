@@ -14,27 +14,27 @@ export default function Header() {
   };
 
   return (
-    <header className='grid-cols-header fixed z-10 grid w-full bg-white shadow-md'>
+    <header className='fixed z-10 grid w-full grid-cols-header bg-white shadow-md'>
       <div className='content-center px-4 py-2'>
         <Image src='/suppon-icon.png' alt='Vercel logomark' width={64} height={64} priority />
       </div>
       <div className='content-center justify-items-center px-8'>
-        <Link href='/' className='text-main text-[2rem] font-bold'>
+        <Link href='/' className='text-[2rem] font-bold text-main'>
           すっぽんゲーム
         </Link>
       </div>
       <div className='content-center justify-items-end px-4'>
         <nav className='hidden md:flex'>
-          <Link href='/' className='text-main px-2 text-center text-lg hover:text-gray-900'>
+          <Link href='/' className='px-2 text-center text-lg text-main hover:text-gray-900'>
             Home
           </Link>
-          <Link href='/news' className='text-main px-2 text-center text-lg hover:text-gray-900'>
+          <Link href='/news' className='px-2 text-center text-lg text-main hover:text-gray-900'>
             News
           </Link>
-          <Link href='/works' className='text-main px-2 text-center text-lg hover:text-gray-900'>
+          <Link href='/works' className='px-2 text-center text-lg text-main hover:text-gray-900'>
             Works
           </Link>
-          <Link href='/contact' className='text-main px-2 text-center text-lg hover:text-gray-900'>
+          <Link href='/contact' className='px-2 text-center text-lg text-main hover:text-gray-900'>
             Contact
           </Link>
         </nav>
@@ -61,16 +61,16 @@ export default function Header() {
       {isOpen && (
         <div className='md:hidden'>
           <nav className='px-4 py-2'>
-            <Link href='/' className='text-main block hover:text-gray-900'>
+            <Link href='/' className='block text-main hover:text-gray-900'>
               Home
             </Link>
-            <Link href='/news' className='text-main block hover:text-gray-900'>
+            <Link href='/news' className='block text-main hover:text-gray-900'>
               News
             </Link>
-            <Link href='/works' className='text-main block hover:text-gray-900'>
+            <Link href='/works' className='block text-main hover:text-gray-900'>
               Works
             </Link>
-            <Link href='/contact' className='text-main block hover:text-gray-900'>
+            <Link href='/contact' className='block text-main hover:text-gray-900'>
               Contact
             </Link>
           </nav>

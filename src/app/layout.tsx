@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang='ja'>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className='grid-rows-main grid'>
+        <div className='grid grid-rows-main'>
           <div className='row-span-1'>
             <Header />
           </div>
