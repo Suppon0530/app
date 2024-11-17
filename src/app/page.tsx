@@ -26,7 +26,13 @@ function SelectImage() {
 
   return (
     <div className='relative'>
-      <Image src={gameImages[currentIndex]} alt='feature-game' width={1000} height={1000} />
+      <Image
+        src={gameImages[currentIndex]}
+        alt='feature-game'
+        width={1000}
+        height={1000}
+        priority
+      />
       <button
         onClick={handlePrev}
         className='absolute left-0 top-1/2 h-[3rem] w-[2rem] -translate-y-1/2 rounded-r bg-white'
