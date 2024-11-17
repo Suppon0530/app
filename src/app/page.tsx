@@ -46,7 +46,7 @@ function SelectImage() {
 // ホームコンポーネント
 export default function Home() {
   return (
-    <main className='grid-rows-home grid justify-items-center bg-gray-100 text-gray-900'>
+    <main className='grid grid-rows-home justify-items-center bg-gray-100 text-gray-900'>
       <div className='row-span-1'>
         <SelectImage />
       </div>
