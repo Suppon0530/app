@@ -3,14 +3,16 @@
 import Image from 'next/image';
 import React from 'react';
 import { useState } from 'react';
+import nextConfig from '../../next.config';
+const BASE_PATH = nextConfig.basePath || '';
 
 // 画像切り替えコンポーネント
 function SelectImage() {
   const gameImages = [
-    '/feature-deepsea.png',
-    '/feature-kanjishot.png',
-    '/feature-mushroom.png',
-    '/feature-yojijukugo.png',
+    `${BASE_PATH}/feature-deepsea.png`,
+    `${BASE_PATH}/feature-kanjishot.png`,
+    `${BASE_PATH}/feature-mushroom.png`,
+    `${BASE_PATH}/feature-yojijukugo.png`,
   ];
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
